@@ -1,1 +1,38 @@
 mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId-quickstart -DinteractiveMode=false
+
+app.java
+package com.example;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static int addNum(int a,int b){
+        return a+b;
+    }
+    public static void main( String[] args )
+    {
+        App app=new App();
+        int result=app.addNum(2,3);
+        System.out.println( "2+3="+result );
+    }
+}
+
+Apptest.java
+package com.example;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+public class AppTest
+{
+    public void appTest(){
+        App app=new App();
+        int result=app.addNum(2,3);
+        System.out.println(result);
+        assertEquals(5,result);
+    }
+}
+
+
