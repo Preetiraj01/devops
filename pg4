@@ -1,0 +1,22 @@
+cd desktop
+mkdir pgm4
+cd pgm4
+comman-pg2
+go to pom.xml ---change version
+app.java
+in place of world -- Maven
+cd projectname
+mvn compile
+mvn package
+java -cp.....pgm2 last line
+gradle init
+yees,2,no,
+folder -gradle build,
+id 'application'
+dependencies {
+    testImplementation libs.junit.junit
+}
+application{
+    mainClass='com.example.App'
+}
+gradle run, gradle test
