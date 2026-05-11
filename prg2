@@ -1,3 +1,6 @@
+cd desktop
+mkdir prog2
+cd prog2
 mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId-quickstart -DinteractiveMode=false
 
 app.java
